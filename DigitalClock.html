@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            background-color: #bde0fe;
+        }
+
+        main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        section {
+            padding: 36px;
+            background-color: #ffff;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        #clock {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Real-Time Digital Clock</h2>
+            <p id="clock"></p>
+
+        </section>
+    </main>
+    <script>
+        function updateClock() {
+            let now = new Date();
+            let timeString = now.toLocaleTimeString();
+            document.getElementById("clock").innerText = timeString;
+        }
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+
+</html>
+
+<!-- Code Flow:
+1. updateClock() gets current time.
+2. Formats time using toLocaleTimeString().
+3. Updates time every second using setInterval().
+Explanation:
+• Uses JavaScript Date object.
+• Ensures real-time clock functionality.
+• Efficient setInterval keeps UI updated. -->
