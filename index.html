@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         * {
@@ -40,9 +41,17 @@
             list-style: decimal;
         }
 
-        li{
+        li {
             margin: 16px 0;
             text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .btn {
+            padding: 8px 16px;
         }
     </style>
 </head>
@@ -51,12 +60,27 @@
     <main>
         <section>
             <ol>
-                <li><a href="./CharacterCounter.html">Real-Time Character Counter</a></li>
-                <li><a href="./DigitalClock.html">Digital Clock</a></li>
-                <li><a href="./RandomPasswordGenerator.html">Random Password Generator</a></li>
-                <li><a href="./NotesApp.html">Notes App</a></li>
-                <li><a href="./ImageGallery.html">Image Gallery</a></li>
-                <li><a href="./CurrencyConverter.html">Currency Converter</a></li>
+                <li><a href="./CharacterCounter.html">Real-Time Character Counter</a> <a href="./CharacterCounter.html"
+                        download="Index.html" class="btn"><i class="fa fa-download"></i> Download</a></li>
+
+                <li><a href="./DigitalClock.html">Digital Clock</a><a href="./DigitalClock.html"
+                        download="Index.html" class="btn"><i class="fa fa-download"></i>
+                        Download</a></li>
+
+                <li><a href="./RandomPasswordGenerator.html">Random Password Generator</a><a
+                        href="./RandomPasswordGenerator.html" download="Index.html" class="btn"><i class="fa fa-download"></i>
+                        Download</a></li>
+
+                <li><a href="./NotesApp.html">Notes App</a><a href="./NotesApp.html" download="Index.html"
+                        class="btn"><i class="fa fa-download"></i>
+                        Download</a></li>
+
+                <li><a href="/ImageGallery.html">Image Gallery</a><a href="./ImageGallery.html"
+                        download="Index.html" class="btn"><i class="fa fa-download"></i>
+                        Download</a></li>
+
+                <li><a href="./CurrencyConverter.html">Currency Converter</a><a href="./CurrencyConverter.html"
+                        download="Index.html" class="btn"><i class="fa fa-download"></i> Download</a></li>
             </ol>
         </section>
     </main>
